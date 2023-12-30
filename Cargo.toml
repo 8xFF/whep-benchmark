@@ -1,0 +1,19 @@
+[package]
+name = "whep-benchmark"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-std = { version = "1.12.0", features = ["attributes", "unstable", "tokio1"] }
+dioxus = "0.4.3"
+dioxus-tui = "0.4.3"
+str0m = { version = "0.1.0", package = "atm0s-custom-str0m" }
+local-ip-address = "0.5.6"
+udp_sas_async = { version = "0.2.0", features = ["async_std"] }
+reqwest = "0.11.23"
+url = "2.5.0"
+log = "0.4.20"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter", "std"] }
+clap = { version = "4.4.11", features = ["derive", "env"] }

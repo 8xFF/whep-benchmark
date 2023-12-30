@@ -1,0 +1,1 @@
+ffmpeg -i $1 -c:v libx264 -preset slow -crf 22 -c:a aac -bf 0 -b:a 128k -movflags +faststart ./source.mp4
