@@ -36,10 +36,10 @@ pub enum WhepEvent {
 #[derive(Debug)]
 pub enum WhepError {
     UrlError,
-    ServerError(Box<dyn Error>),
+    ServerError(Box<dyn Error + Send + Sync>),
     SdpError,
     WebrtcError,
-    NetworkError(Box<dyn Error>),
+    NetworkError(Box<dyn Error + Send + Sync>),
 }
 
 pub struct WhepClient {

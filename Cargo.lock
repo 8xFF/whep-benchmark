@@ -325,26 +325,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "atm0s-custom-str0m"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bf10a32f433e7346fc24cf22278880d3550b2e63618e7df81089ded2c18d3236"
-dependencies = [
- "combine",
- "crc",
- "hmac",
- "once_cell",
- "openssl",
- "openssl-sys",
- "rand",
- "sctp-proto",
- "serde",
- "sha-1",
- "thiserror",
- "tracing",
-]
-
-[[package]]
 name = "atomic-waker"
 version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2746,6 +2726,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "str0m"
+version = "0.4.1"
+dependencies = [
+ "combine",
+ "crc",
+ "hmac",
+ "once_cell",
+ "openssl",
+ "openssl-sys",
+ "rand",
+ "sctp-proto",
+ "serde",
+ "sha-1",
+ "thiserror",
+ "tracing",
+]
+
+[[package]]
 name = "strsim"
 version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3238,13 +3236,15 @@ name = "whep-benchmark"
 version = "0.1.0"
 dependencies = [
  "async-std",
- "atm0s-custom-str0m",
  "clap",
  "dioxus",
  "dioxus-tui",
+ "futures-util",
  "local-ip-address",
  "log",
+ "parking_lot",
  "reqwest",
+ "str0m",
  "tracing-subscriber",
  "udp_sas_async",
  "url",
