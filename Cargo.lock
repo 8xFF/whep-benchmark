@@ -2451,9 +2451,9 @@ checksum = "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
 
 [[package]]
 name = "sctp-proto"
-version = "0.1.6"
+version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "514eb06a3f6b1f119b6a00a9a87afac072894817d3283b0d36adc8f8a135886a"
+checksum = "8f64cef148d3295c730c3cb340b0b252a4d570b1c7d4bf0808f88540b0a888bc"
 dependencies = [
  "bytes",
  "crc",
@@ -2728,14 +2728,15 @@ dependencies = [
 [[package]]
 name = "str0m"
 version = "0.4.1"
+source = "git+https://github.com/algesten/str0m.git?branch=main#18f56ebf6266c8df5d9dcf9699695e59b717d30a"
 dependencies = [
  "combine",
  "crc",
+ "fastrand 2.0.1",
  "hmac",
  "once_cell",
  "openssl",
  "openssl-sys",
- "rand",
  "sctp-proto",
  "serde",
  "sha-1",

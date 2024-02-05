@@ -1,7 +1,6 @@
 use std::sync::Arc;
 
 use clap::Parser;
-use dioxus::prelude::*;
 use dioxus_tui::Config;
 use tracing_subscriber::{fmt, layer::SubscriberExt, util::SubscriberInitExt, EnvFilter};
 
