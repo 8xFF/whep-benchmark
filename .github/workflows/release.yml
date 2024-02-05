@@ -32,8 +32,8 @@ jobs:
           - linux musl x64
           - linux gnu aarch64
           - linux musl aarch64
-          - linux gnueabihf arm
-          - linux gnueabihf armv7
+          # - linux gnueabihf arm
+          # - linux gnueabihf armv7
           # - linux gnu mips
           # - linux gnuabi64 mips64
           # - linux gnuabi64 mips64el
@@ -61,16 +61,16 @@ jobs:
             rust: stable
             target: aarch64-unknown-linux-musl
             cross: true
-          - build: linux gnueabihf arm
-            os: ubuntu-latest
-            rust: stable
-            target: arm-unknown-linux-gnueabihf
-            cross: true
-          - build: linux gnueabihf armv7
-            os: ubuntu-latest
-            rust: stable
-            target: armv7-unknown-linux-gnueabihf
-            cross: true
+          # - build: linux gnueabihf arm
+          #   os: ubuntu-latest
+          #   rust: stable
+          #   target: arm-unknown-linux-gnueabihf
+          #   cross: true
+          # - build: linux gnueabihf armv7
+          #   os: ubuntu-latest
+          #   rust: stable
+          #   target: armv7-unknown-linux-gnueabihf
+          #   cross: true
           # - build: linux gnu mips
           #   os: ubuntu-latest
           #   rust: 1.71.1
